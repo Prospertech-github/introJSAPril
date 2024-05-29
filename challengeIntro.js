@@ -139,3 +139,33 @@ function BMICalculator(mass, height) {
 
 BMICalculator(80, 1.6);
 BMICalculator(75, 1.9);
+
+let univelStaffAges = [12, 39, 40, 17, 5, 69, 81, 34, 23, 20]
+let civicHive = [23, 47, 38, 45]
+
+function averageAgeCalculator(ages) {
+  let numOfAges = ages.length;
+  let sum = 0;  
+  for (let i = 0; i < ages.length; i++){
+    sum += ages[i];
+  }
+  console.log(sum / numOfAges)
+  // BMICalculator(78,1.6)
+}
+
+// averageAgeCalculator(univelStaffAges);
+averageAgeCalculator(civicHive);
+
+civicHive.push(25, 48);
+console.log(civicHive)
+civicHive.pop()
+console.log(civicHive)
+
+civicHive.shift()
+console.log(civicHive)
+civicHive.unshift('dannyBoy', 'omoGbolahan');
+console.log(civicHive)
+
+let dml = ' Asake na bad guy ';
+
+console.log(dml.split(' ').join("").length);
